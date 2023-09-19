@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap");
 @media screen and (min-width: 600px) {
   header {
     grid-area: header;
@@ -24,11 +25,30 @@
   footer ul {
     display: flex;
     gap: 5rem;
+    list-style-type: none;
+  }
+  footer ul li {
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  footer ul li a {
+    text-decoration: none;
+  }
+  footer div p {
+    color: #616161;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
   body {
     display: grid;
     grid-template-columns: 250px 1fr;
-    grid-template-rows: 95vh 74px;
+    grid-template-rows: 90vh 74px;
     grid-template-areas: "nav main" "nav footer";
   }
 }
@@ -53,6 +73,7 @@ main {
 
 #section__form__title {
   display: none;
+  font-family: "Raleway;";
 }
 #section__form fieldset {
   display: flex;
@@ -67,7 +88,7 @@ main {
   gap: 0.5rem;
   font-family: "Raleway";
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
 }
 #section__form fieldset div input {
   width: 80vw;
@@ -118,6 +139,11 @@ main {
   #section__form__title {
     display: block;
     margin-bottom: 3rem;
+    font-family: "Raleway";
+    font-size: 18px;
+  }
+  #section__form__title h3 {
+    font-family: "Raleway";
   }
   #section__form fieldset {
     display: flex;
@@ -129,6 +155,7 @@ main {
     border-radius: 5px;
     padding: 2rem;
     justify-items: center;
+    font-family: "Raleway";
   }
   #section__form fieldset .left__form {
     width: 30vw;
@@ -144,6 +171,14 @@ main {
   }
   #section__form fieldset select {
     width: 15vw;
+  }
+  .container__image {
+    width: 65%;
+    margin-left: 25px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-bottom: 25px;
   }
   .container__nav__ul {
     display: flex;

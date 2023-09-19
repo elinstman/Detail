@@ -27,6 +27,7 @@ main {
 
     &__title {
          display: none;
+         font-family: 'Raleway;'
     }
 
     fieldset {
@@ -37,7 +38,7 @@ main {
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
-            @include primaryFont(12px);
+            @include primaryFont(16px);
 
             input {
                 width: 80vw;
@@ -76,6 +77,8 @@ main {
     height: clamp(2rem, 2vw, 7rem);
 }
 
+
+
 @media screen and (min-width: 600px){
     #section__form {
         width: auto;
@@ -83,6 +86,12 @@ main {
         &__title {
             display: block;
             margin-bottom: 3rem;
+            font-family: 'Raleway';
+            font-size: 18px;
+
+            h3 {
+                font-family: 'Raleway';
+            }
         }
 
         fieldset {
@@ -91,6 +100,7 @@ main {
             border-radius: 5px;
             padding: 2rem;
             justify-items: center;
+            font-family: 'Raleway';
 
             .left__form {
                 width: 30vw;
@@ -117,6 +127,15 @@ main {
     }
 
     .container {
+        &__image {
+            width: 65%;
+            margin-left: 25px;
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 25px;
+            padding-bottom: 25px;
+        }
+
         &__nav {
 
             &__ul{
@@ -151,10 +170,11 @@ main {
         height: 25px;
     }
 
-    .header__container__logo {
-        width: 200px;
-        height: auto;
-    }
+    // .header__container__logo {
+    //     width: 200px;
+    //     // height: 33px;
+    //     height: auto;
+    // }
 
 }
 
