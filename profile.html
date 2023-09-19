@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+
+
+    <title>Startsida</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <img class="header__container__logo" src="" alt="">
+            <img class="header__container__logo" src="" alt="">
+        </div>
+    </header>
+
+    <!--Top left nav-->
+    <div class="container">
+        <nav class="container__nav">
+            <img class="header__container__logo" src="/icons/Postagram.svg" alt="">
+            <ul class="container__nav__ul">
+                <li class="container__nav__ul__li"><img class="container__icon" src="/icons/home.svg" alt=""><a href="">Home</a></li>
+                <li class="container__nav__ul__li"><img class="container__icon" src="/icons/search.svg" alt=""><a href="">Explore</a></li>
+                <li class="container__nav__ul__li"><img class="container__icon" src="/icons/heart.svg" alt=""><a href="">Favorites</a></li>
+                <li class="container__nav__ul__li"><img class="container__icon__img" src="/img/image2.jpg" alt=""><a href="">Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section id="section__form">
+            <div id="section__form__title">
+                <h3>My profile</h3>
+                <hr>
+            </div>
+            <form action="#" method="GET" target="_blank">
+                <fieldset>
+                    <div class="left__form">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div>
+                            <label for="lastname">Lastname</label>
+                            <input type="text" id="lastname" name="lastname">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="age">Age</label>
+                            <input type="number" name="age" id="age">
+                        </div>
+                    </div>
+                    <div class="right__form">
+                        <div>
+                            <label for="aboutMe">About me</label>
+                            <textarea name="aboutMe" id="aboutMe" cols="30" rows="6"
+                                placeholder="Write something about yourself..."></textarea>
+                        </div>
+                        <div>
+                            <label for="gender">Gender</label>
+                            <select name="gender" id="gender">
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                                <option value="other">Other</option>
+                                <option value="noDisclosure">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button id="submit" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!--Bottom nav-->
+    <div class="bottom">
+        <nav class="bottom__nav">
+            <ul class="bottom__ul">
+                <li class="bottom__li"><a href=""><img class="bottom__icon" src="" alt="">Home</a></li>
+                <li class="bottom__li"><a href=""><img class="bottom__icon" src="" alt="">Explore</a></li>
+                <li class="bottom__li"><a href=""><img class="bottom__icon" src="" alt="">Favorites</a></li>
+                <li class="bottom__li"><a href=""><img class="bottom__icon" src="" alt="">Profile</a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__ul">
+                <li> <a class="footer__link" href="">Home</a></li>
+                <li> <a class="footer__link" href="">Explore</a></li>
+                <li> <a class="footer__link" href="">Favorites</a></li>
+                <li> <a class="footer__link" href="">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="footer__p">
+            <p class="footer__text">2023 Postagram</p>
+        </div>
+    </footer>
+</body>
+
+</html>

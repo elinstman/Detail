@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap');
+@import 'variables';
+@import 'layout';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: $primaryColor;
+}
+
+body {
+    max-width: 100%;
+}
+
+main {
+    // @include flexCenter(column);
+    display: flex;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    width: auto;
+}
+
+
+#section__form {
+
+    &__title {
+         display: none;
+    }
+
+    fieldset {
+        @include flexCenter(column);
+
+        div {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            @include primaryFont(12px);
+
+            input {
+                width: 80vw;
+                padding: 0.4rem;
+                @include border (#D9D9D9);
+            }
+        }
+
+        textarea {
+            resize: none;
+            @include border (#D9D9D9);
+            padding: 10px;
+            width: 80vw;
+            @include primaryFont(12px);
+        }
+
+        select {
+            padding: 10px;
+            @include border (#D9D9D9);
+            width: 30vw;
+        }
+
+        button {
+            padding: 5px;
+            @include border (#3E5E38);
+            color: #ffffff;
+            @include primaryFont(15px);
+
+        }
+    }
+}
+
+.container__icon__img {
+    border-radius: 50px;
+    width: clamp(2rem, 2vw, 7rem);
+    height: clamp(2rem, 2vw, 7rem);
+}
+
+@media screen and (min-width: 600px){
+    #section__form {
+        width: auto;
+
+        &__title {
+            display: block;
+            margin-bottom: 3rem;
+        }
+
+        fieldset {
+            @include flexCenter(row);
+            column-gap: 2rem;
+            border-radius: 5px;
+            padding: 2rem;
+            justify-items: center;
+
+            .left__form {
+                width: 30vw;
+            }
+
+            .right__form {
+                width: 30vw;
+            }
+
+            textarea {
+                width: 30vw;
+            }
+
+            div {
+                input {
+                    width: 30vw;
+                }
+            }
+
+            select {
+                width: 15vw;
+            }
+        }
+    }
+
+    .container {
+        &__nav {
+
+            &__ul{
+                display: flex;
+                flex-direction: column;
+                row-gap: 35px;
+                list-style-type: none;
+
+                &__li{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    
+                    a {
+                        font-family: 'Raleway';
+                        text-decoration: none;
+                        font-family: 'Raleway';
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    .container__icon__img {
+        border-radius: 50px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .header__container__logo {
+        width: 200px;
+        height: auto;
+    }
+
+}
+
+// @media (min-width: 768px) {
+//     #section__form {
+//         &__title {
+//             display: block;
+//             text-align: center;
+//             margin-bottom: 1rem;
+//             h3 {
+//                 font-size: 1.5rem;
+//             }
+//             hr {
+//                 border: 1px solid $primaryColor;
+//                 width: 50%;
+//                 margin: 0 auto;
+//             }
+//         }
+
+//         fieldset {
+//             flex-direction: row; // Display fields in a row
+
+//             .left__form {
+//                 width: 50%; // Take 50% of the container
+//             }
+
+//             .right__form {
+//                 width: 50%; // Take 50% of the container
+//             }
+//         }
+//     }
+// }
