@@ -1,0 +1,44 @@
+
+@media screen and (min-width: 600px){
+
+    header {
+        grid-area: header;
+    }
+    
+    .container {
+        grid-area: nav;
+        background-color: lightblue;
+    }
+    
+    main {
+        grid-area: main;
+        background-color: lightcoral;
+    }
+    
+    .bottom {
+        display: none;
+        grid-area: bottom;
+        background-color: lightgreen;
+    }
+    
+    .footer {
+        grid-area: footer;
+        background-color: lightpink;
+        display: flex;
+        flex-direction: row;
+    
+        
+        
+    }
+    
+    body {
+        display: grid;
+        grid-template-columns: 250px auto;
+        grid-template-rows: 95vh 74px;
+        grid-template-areas: 
+        'nav main'
+        'nav footer'
+        ;
+    }
+}
+

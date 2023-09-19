@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap');
+@import 'variables';
+@import 'layout';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: $primaryColor;
+}
+
+main {
+    @include flexCenter(column);
+    padding: 5rem;
+}
+
+#section__form {
+    width: 100vw;
+
+    &__title {
+         display: none;
+    }
+
+    fieldset {
+        @include flexCenter(column);
+
+        div {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            @include primaryFont(12px);
+
+            input {
+                width: 80vw;
+                padding: 0.4rem;
+                @include border (#D9D9D9);
+            }
+        }
+
+        textarea {
+            resize: none;
+            @include border (#D9D9D9);
+            padding: 10px;
+            width: 80vw;
+            @include primaryFont(12px);
+        }
+
+        select {
+            padding: 10px;
+            @include border (#D9D9D9);
+            width: 30vw;
+        }
+
+        button {
+            padding: 5px;
+            @include border (#3E5E38);
+            color: #ffffff;
+            @include primaryFont(15px);
+
+        }
+    }
+}
+
+@media screen and (min-width: 600px){
+    #section__form {
+        width: 80vw;
+
+        &__title {
+            display: block;
+            margin-bottom: 3rem;
+        }
+
+        fieldset {
+            @include flexCenter(row);
+            column-gap: 2rem;
+            border-radius: 5px;
+            padding: 2rem;
+            justify-items: center;
+
+            .left__form {
+                width: 30vw;
+            }
+
+            .right__form {
+                width: 30vw;
+            }
+
+            textarea {
+                width: 30vw;
+            }
+
+            div {
+                input {
+                    width: 30vw;
+                }
+            }
+
+            select {
+                width: 15vw;
+            }
+        }
+    }
+
+
+
+}
+
+// @media (min-width: 768px) {
+//     #section__form {
+//         &__title {
+//             display: block;
+//             text-align: center;
+//             margin-bottom: 1rem;
+//             h3 {
+//                 font-size: 1.5rem;
+//             }
+//             hr {
+//                 border: 1px solid $primaryColor;
+//                 width: 50%;
+//                 margin: 0 auto;
+//             }
+//         }
+
+//         fieldset {
+//             flex-direction: row; // Display fields in a row
+
+//             .left__form {
+//                 width: 50%; // Take 50% of the container
+//             }
+
+//             .right__form {
+//                 width: 50%; // Take 50% of the container
+//             }
+//         }
+//     }
+// }
