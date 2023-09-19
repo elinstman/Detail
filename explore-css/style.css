@@ -113,6 +113,8 @@ body {
         padding: 20px;
         margin: 20px;
         left: 90px;
+        max-width: 90%;
+        
      }
 
 
@@ -143,7 +145,8 @@ body {
 
     }
     .explore {
-        max-width: 1200px;
+        max-width: 1190px;
+        height: 74px;
         margin: 0 auto;
         padding: 20px;
         background-color: white;
@@ -218,6 +221,7 @@ body {
         justify-content: space-around;
         align-items: center;
         padding: 10px;
+        margin-left: 120px;
         
         
     }
@@ -248,6 +252,13 @@ body {
         width: 200px;
         margin-top: 10px;
         
+    }
+
+    #profile-icon {
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        margin-top: 40px;
     }
     
 }
