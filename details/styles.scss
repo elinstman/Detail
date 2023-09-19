@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap");
-@import "desktop";
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -47,26 +47,27 @@
     flex-direction: column;
 
     &__image {
-      width: 65%;
+      width: 200px;
       padding-top: 50px;
-      padding-left: 20px;
-      padding-right: 25px;
-      padding-bottom: 25px;
+      padding-left: 24px;
+      padding-right: 33px;
+      padding-bottom: 45px;
     }
 
     &__nav {
       display: flex;
       flex-direction: column;
-      // padding-top: 3rem;
-      padding-left: 15px;
+      align-items: flex-start;
+      padding-left: 24px;
       padding-right: 30px;
       width: 250px;
-      height: 350px;
+      height: 250px;
 
       &__ul {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        // justify-content: space-around;
+        gap: 35px;
         list-style: none;
         flex-grow: 1;
 
