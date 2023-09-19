@@ -8,13 +8,22 @@
     color: $primaryColor;
 }
 
-main {
-    @include flexCenter(column);
-    padding: 5rem;
+body {
+    max-width: 100%;
 }
 
+main {
+    // @include flexCenter(column);
+    display: flex;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    width: auto;
+}
+
+
 #section__form {
-    width: 100vw;
 
     &__title {
          display: none;
@@ -61,9 +70,15 @@ main {
     }
 }
 
+.container__icon__img {
+    border-radius: 50px;
+    width: clamp(2rem, 2vw, 7rem);
+    height: clamp(2rem, 2vw, 7rem);
+}
+
 @media screen and (min-width: 600px){
     #section__form {
-        width: 80vw;
+        width: auto;
 
         &__title {
             display: block;
@@ -101,7 +116,45 @@ main {
         }
     }
 
+    .container {
+        &__nav {
 
+            &__ul{
+                display: flex;
+                flex-direction: column;
+                row-gap: 35px;
+                list-style-type: none;
+
+                &__li{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    
+                    a {
+                        font-family: 'Raleway';
+                        text-decoration: none;
+                        font-family: 'Raleway';
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    .container__icon__img {
+        border-radius: 50px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .header__container__logo {
+        width: 200px;
+        height: auto;
+    }
 
 }
 
