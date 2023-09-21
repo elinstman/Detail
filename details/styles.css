@@ -43,6 +43,7 @@
     border-color: #b3b3b3;
     display: flex;
     flex-direction: column;
+    z-index: 1;
   }
   .container__image {
     width: 200px;
@@ -87,10 +88,13 @@
   .main {
     position: relative;
     left: 250px;
-    max-width: 1190px;
+    position: relative;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
+    z-index: 0;
   }
 }
 
@@ -235,13 +239,21 @@
     width: 100%;
     left: 250px;
     background-color: white;
+    border-top: 1px solid #b4b4b4;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
   }
   .footer__nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
     max-width: 1190px;
+    flex-grow: 1;
+  }
+  .footer__nav p {
+    padding-right: 40px;
   }
   .footer__nav__ul li {
     list-style: none;
