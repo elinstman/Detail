@@ -1,31 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap');
-@media screen and (min-width: 600px){
+
+header {
+    grid-area: header;
+}
+
+.container {
+    grid-area: nav;
+    display: none;
+}
+
+main {
+    grid-area: main;
+}
+
+.bottom {
+    grid-area: bottom;
+}
+
+footer {
+    display: none;
+}
+.bottom {
+    grid-area: bottom;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+
+@media screen and (min-width: 668px){
 
     header {
-        grid-area: header;
+        display: none !important;
     }
     
     .container {
-        grid-area: nav;
-        // background-color: lightblue;
+        display: block;
         border-right: 1px solid #B4B4B4;
-    }
-    
-    main {
-        grid-area: main;
-        // background-color: lightcoral;
-    
     }
     
     .bottom {
         display: none;
-        grid-area: bottom;
-        // background-color: lightgreen;
     }
     
     footer {
+        display: block;
         grid-area: footer;
-        // background-color: lightpink;
         padding: 2rem;
         display: flex;
         justify-content: space-between;
