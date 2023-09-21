@@ -40,8 +40,15 @@ body {
 
 }
 
+.header-container-logo:hover {
+    opacity: 0.7;
+}
+.header-container-logo-right:hover {
+    opacity: 0.7;
+}
+
 .explore {
-    max-width: 396px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
@@ -53,6 +60,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 150px); 
     grid-gap: 2px; 
+    
 }
 
 .explore-images {
