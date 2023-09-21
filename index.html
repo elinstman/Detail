@@ -1,141 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap">
-    <link rel="stylesheet" href="src/scss/main.css">
-
-
-    <title>Startsida</title>
-</head>
-
-<body>
-    <div class="full-container">
-
-
-
-
-        <!--Our header-->
-        <header class="header">
-            <div class="header-container">
-                <img class="postgram" src="/icons/Postagram.svg" alt="">
-                <div class="react-icons-fi"><img class="react-icons-fi" src="/icons/add.svg" alt=""></div>
-
-            <div class="frame"><p class="p">Connect with Friends</p></div>
-            <div class="image-one">
-              <img class="img-one" src="./img/image 3.png" alt="" />
-            </div>
-        </header>
-
-
-
-        <article>
-            <div class="card-mobile">
-                <div class="overlap-group">
-                    <div class="overlap">
-                        <img class="mask-group" src="/img/first-pic.jpg" />
-                        <div class="group">
-                            <div class="text-wrapper">Webb23</div>
-                            <div class="div">3532 likes</div>
-                        </div>
-                        <img class="react-icons-fi" src="icons/heart.svg" />
-                    </div>
-
-                    <div class="frame">
-                        <p class="p">Connect with  Friends</p>
-                    </div>
-                    <div class="image-one"> <img class="img-one" src="./img/image 3.png" alt=""></div>
-
-                </div>
-            </div>
-        </article>
-
-
-        <article>
-            <div class="card-mobile">
-                <div class="overlap-group">
-                    <div class="overlap">
-                        <img class="mask-group" src="/img/first-pic.jpg" />
-                        <div class="group">
-                            <div class="text-wrapper">Victor98k</div>
-                            <div class="div">3532 likes</div>
-                        </div>
-                        <img class="react-icons-fi" src="icons/heart.svg" />
-                    </div>
-                    <div class="frame">
-                        <p class="p">Explore your world</p>
-                    </div>
-                    <div class="image-one"> <img class="img-one" src="./img/image 3.png" alt=""></div>
-
-                </div>
-            </div>
-        </article>
-
-
-
-
-
-        <!--Top left nav-->
-        <div class="container">
-            <nav class="container-nav">
-                <div class="label">
-                    <div class="text-wrapper-two">Postgram</div>
-                </div>
-                <ul class="container-nav-ul">
-                    <li><a href=""><img class="cantainer-icon" src="/icons/home.svg" alt="">Home</a></li>
-                    <li><a href=""><img class="cantainer-icon" src="/icons/search.svg" alt="">Explore</a></li>
-                    <li><a href=""><img class="cantainer-icon" src="/icons/heart.svg" alt="">Favorites</a></li>
-                    <li><a href=""><img class="cantainer-img" src="img/image2.jpg" alt="">Profile</a></li>
-                </ul>
-            </nav>
-
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- mobil header start -->
+    <header class="mobile-header mobile">
+      <div class="header-content">
+        <div class="logo">
+          <a href="#" class="logo-text"><h4><img src="/icons/Postagram.svg" alt=""></h4></a>
         </div>
-
-
-
-        <main>
-
-
-
-
-
-
-        </main>
-
-        <!--Bottom nav-->
-        <div class="bottom">
-            <nav class="bottom-nav">
-                <ul class="bottom-ul">
-                    <li><a href=""><img class="bottom-icon" src="/icons/home.svg" alt=""></a></li>
-                    <li><a href=""><img class="bottom-icon" src="/icons/search.svg" alt=""></a></li>
-                    <li><a href=""><img class="bottom-icon" src="/icons/heart.svg" alt=""></a></li>
-                    <li><a href=""><img class="bottom-icon" src="/img/first-pic.jpg" alt=""></a></li>
-                </ul>
-
-            </nav>
+        <div class="icon">
+          <img class="bx bx-plus-circle" src="/icons/FiPlusCircle.png" alt="">
         </div>
+      </div>
+      <hr />
+    </header>
+    <!-- mobil header slutar -->
+
+    <!-- Skrivbord header start -->
+    <header class="desktop-header desktop">
+      <div class="page-title">
+        <div>
+          <h4>For you</h4>
+        </div>
+        <hr/>
+        <br/>
+      </div>
+    </header>
+    <!-- Skrivbord header slutar -->
 
 
-        <!--Footer-->
-        <footer class="footer">
-            <nav class="footer-nav">
-                <ul class="footer-ul">
-                    <li> <a class="footer-link" href="">Home</a></li>
-                    <li> <a class="footer-link" href="">Explore</a></li>
-                    <li> <a class="footer-link" href="">Favorites</a></li>
-                    <li> <a class="footer-link" href="">Profile</a></li>
-                </ul>
-                <div class="footer-p">
-                    <p class="footer-text">2023 Postagram</p>
-                </div>
-            </nav>
 
-        </footer>
 
-    </div>
-</body>
 
+
+    <main class="desktop-main-container">
+      <div class="desktop-main">
+        <div class="card">
+          <div class="card-content">
+              <div class="profile-info">
+                  <img src="/img/first-pic.jpg" alt="John Doe's Profile Picture">
+                  <div class="profile-details">
+                      <b>Malin löv</b>
+                      <p>Likes 1234</p>
+                  </div>
+                  <div class="like-button">
+                      <i class="bx bx-heart"></i>
+                  </div>
+              </div>
+              <div class="card-image">
+                  <img src="/img/manindesert.jpg"Post Image 1">
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-content">
+              <div class="profile-info">
+                  <img src="/img/first-pic.jpg" alt="Jane Smith's Profile Picture">
+                  <div class="profile-details">
+                      <b>Calle Seger</b>
+                      <p>Likes 1023</p>
+                  </div>
+                  <div class="like-button">
+                      <i class="bx bx-heart"></i>
+                  </div>
+              </div>
+              <div class="card-image">
+                  <img src="/img/desertmouantain.jpg" alt="Post Image 1">
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-content">
+              <div class="profile-info">
+                  <img src="/img/first-pic.jpg" alt="John Doe's Profile Picture">
+                  <div class="profile-details">
+                      <b>Isak Andersson</b>
+                      <p>Likes 1023</p>
+                  </div>
+                  <div class="like-button">
+                      <i class="bx bx-heart"></i>
+                  </div>
+              </div>
+              <div class="card-image">
+                  <img src="/img/desertlandscape.jpg" alt="Post Image 1">
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-content">
+              <div class="profile-info">
+                  <img src="/img/first-pic.jpg" alt="John Doe's Profile Picture">
+                  <div class="profile-details">
+                      <b>Ellinor brand</b>
+                      <p>Likes 12302</p>
+                  </div>
+                  <div class="like-button">
+                      <i class="bx bx-heart"></i>
+                  </div>
+              </div>
+              <div class="card-image">
+                  <img src="/img/desertsand.jpg" alt="Post Image 1">
+                  
+              </div>
+          </div>
+      </div>
+
+
+
+      
+        </section>
+        <br/>
+        <!-- PLACEHOLDER CONTENT ENDS -->
+      </div>
+    </main>
+    <!-- SIDEBAR START -->
+    <aside class="desktop">
+      <div class="desktop-aside-container">
+          <nav class="desktop-aside">
+              <h3><img src="Postagram.svg" alt=""></h3>
+              <ul class="desktop-aside-list icon">
+                  <li class="aside-item">
+                      <a href="index.html">
+                          <div class="icon-text-wrapper">
+                              <i class="bx bx-home-alt"></i>
+                              <span>Home</span>
+                          </div>
+                      </a>
+                  </li>
+                  <li class="aside-item">
+                      <a href="explore.html">
+                          <div class="icon-text-wrapper">
+                              <i class="bx bx-search"></i>
+                              <span>Explore</span>
+                          </div>
+                      </a>
+                  </li>
+                  <li class="aside-item">
+                      <a href="favorites.html">
+                          <div class="icon-text-wrapper">
+                              <i class="bx bx-heart"></i>
+                              <span>Favorites</span>
+                          </div>
+                      </a>
+                  </li>
+                  <li class="aside-item">
+                      <a href="profile.html">
+                          <div class="icon-text-wrapper">
+                              <img src="/img/image 4.jpg" class="profile-pic" />
+                              <span>Profile</span>
+                          </div>
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+  </aside>
+   
+    <!-- SIDEBAR END -->
+    <!-- DESKTOP FOOTER START -->
+    <footer class="desktop-footer-container desktop">
+      <nav class="desktop-footer">
+        <ul class="desktop-footer-list">
+          <li>
+            <a href="index.html"> Home</a>
+          </li>
+          <li>
+            <a href="explore.html">Explore</a>
+          </li>
+          <li>
+            <a href="favorites.html">Favorites</a>
+          </li>
+          <li>
+            <a href="profile.html">Profile</a>
+          </li>
+        </ul>
+        <p>2023 Postagram</p>
+      </nav>
+    </footer>
+    <!-- DESKTOP FOOTER END -->
+    <!-- MOBILE FOOTER START -->
+    <footer class="mobile-footer-container mobile">
+      <hr />
+      <nav class="mobile-footer">
+        <ul class="mobile-footer-list icon">
+          <li>
+            <a href="index.html"> <i class="bx bx-home-alt"></i></a>
+          </li>
+          <li>
+            <a href="explore.html"><i class="bx bx-search"></i></a>
+          </li>
+          <li>
+            <a href="favorites.html"><i class="bx bx-heart"></i></a>
+          </li>
+          <li>
+            <a href="profile.html"
+              ><img
+                src="/index style/img/image 4.jpg"
+                class="profile-pic"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+
+    
+    <!-- MOBILE FOOTER END -->
+  </body>
 </html>
