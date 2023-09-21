@@ -137,7 +137,7 @@
 }
 @media (min-width: 668px) {
   .section__article {
-    max-width: 827px;
+    max-width: 60%;
   }
 }
 .section__article__header {
@@ -162,7 +162,7 @@
 @media (min-width: 668px) {
   .profile {
     grid-template-columns: repeat(5, 1fr);
-    max-width: 827px;
+    max-width: 80%;
     border-top: 1px solid black;
     padding-top: 40px;
   }
@@ -249,7 +249,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    max-width: 1190px;
+    max-width: 80%;
     flex-grow: 1;
   }
   .footer__nav p {
