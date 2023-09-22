@@ -45,7 +45,7 @@
   
 
 
-  /* Card som tar upp hela width fÃ¶r mobil */
+  /* Card som tar upp hela width for mobil */
   .card {
     width: 100%; 
   }
@@ -97,7 +97,7 @@
   
   
   .current-page {
-    font-weight: bold;
+    
   }
   
   .profile-info {
@@ -145,7 +145,10 @@
   
   
   
-  /* Aside END */
+  /* Aside (end) */
+
+
+
   
   /* Footer !!! DESKTOP !!! START */
   
@@ -198,29 +201,29 @@
   }
   
   .logo-text {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px; /* Adjust the font size as needed */
-    color: #333; /* Text color for the logo */
+    
+    font-weight: 500px;
+    font-size: 18px; 
+    color: #333; /* text colour */
     text-decoration: none;
   }
   
   .icon i {
-    font-size: 30px; /* Adjust the icon size as needed */
+    font-size: 30px; 
     color: #333; /* Icon color */
   }
   
-  /* Header MOBILE VERSION END */
+  /* Header mobile end */
   
-  /* Main settings MOBILE START */
+  /* Main setting mobile */
   
   .mobile-main-container {
     margin-bottom: 60px;
   }
   
-  /* Main settings MOBILE END */
+  /* Main settings mobile (end) */
   
-  /* Footer !!! MOBILE !!! START */
+  /* Footer mobile start */
   
   .mobile-footer-container {
     position: fixed;
@@ -255,9 +258,9 @@
     width: 30px;
   }
   
-  /* Footer END */
+  /* Footer mobile end  */
   
-  /* MEDIA QUERIES */
+  /* MEDIA @ */
   
   .mobile {
     display: unset;
