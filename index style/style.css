@@ -268,7 +268,7 @@
       margin: 0px;
       padding:0px;
     }
-  .desktop-main{}
+  .desktop-main {
   
     .mobile {
       display: unset;
@@ -276,5 +276,6 @@
     .desktop {
       display: none;
     }
+  }
   }
   
