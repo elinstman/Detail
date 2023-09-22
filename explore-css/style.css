@@ -159,7 +159,7 @@ body {
         position: absolute;
         left: 0;
         bottom: -1px; 
-        width: 80%; 
+        width: 900px; 
         border-bottom: 2px solid black; 
     }
     
@@ -198,19 +198,18 @@ body {
         position: fixed;
         display: flex;
         padding: 30px;
+        border-right: 1px solid #b3b3b3;
         
-
     }
     .container-icon {
         width: 25px;
         height: 25px;
         
     }
-    
-
 
     .container-nav li {
         list-style: none;
+        
     }
 
     .container-nav li a {
@@ -227,8 +226,8 @@ body {
         margin-top: 40px;
     }
     .container{
-        display: block;
-        
+        display: block;    
+
     }
 
     .explore-container {
@@ -236,8 +235,6 @@ body {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, 400px); 
         grid-gap: 5px; 
-        
-        
     }
     
     .explore-images {
@@ -261,9 +258,11 @@ body {
         position: fixed;
         bottom: 0;
         width: 100%;
-        left: 0;
+        left: 250px;
         background-color: white;
         z-index: 10;
+        border-top: 2px solid #b3b3b3;
+        
     }
 
     .footer-nav {
@@ -271,9 +270,8 @@ body {
         justify-content: space-around;
         align-items: center;
         padding: 10px;
-        margin-left: 150px;
-        
-        
+        margin-left: 100px;
+        width: 80%;
     }
 
     .footer li {
@@ -284,8 +282,7 @@ body {
     .footer-ul li {
         margin: 0 10px;
         display: inline-block;
-        padding-left: 40px;
-        
+        padding-left: 40px;  
     }
 
     .footer a { 
