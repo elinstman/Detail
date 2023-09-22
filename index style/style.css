@@ -83,7 +83,7 @@
   
   .desktop-aside-list {
     list-style: none;
-    font-weight: bold;
+    font-weight: ;
     display: inherit;
     flex-direction: column;
     gap: 1.5rem;
